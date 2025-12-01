@@ -1,65 +1,159 @@
-import Image from "next/image";
+import DestinationsPage from "./destinations/page";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+  <>
+    <div className="w-full min-h-screen relative overflow-hidden">
+
+   
+      <video
+        src="/video/bg.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+     
+      <div className="absolute inset-0 bg-black/30"></div>
+
+     
+      <header className="relative z-10 w-full flex flex-col items-center">
+       
+        <div className="w-full bg-[#FD014F] text-white text-center py-3 text-sm">
+          30 Sundays raises $770k to bring unique experiences to Indian couples
+        </div>
+
+        <nav className=" bg-[#FBF5F0] mt-[16px] px-10 py-3 rounded-full flex items-center justify-between w-[80%] shadow-md">
+          <div className="flex items-center gap-2">
+            <img src="image/icon 2.svg" alt="logo" className="w-10" />
+            <div className="flex flex-col gap-0 leading-tight">
+            <p className="text-small text-gray-700">30</p>
+            <span className="text-small text-gray-700" >Sundays</span>
+            </div>
+          </div>
+
+          <ul className="flex gap-10 text-gray-600 font-bold">
+            <li className="text-[#EF3A6D] relative">
+              Home
+              <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#EF3A6D]"></span>
+            </li>
+            <li>Blog</li>
+            <li>Destinations</li>
+            <li>About</li>
+          </ul>
+        </nav>
+      </header>
+
+  
+      <div className="relative z-10 flex items-center justify-center flex-col h-[70vh] text-center px-4">
+        <h1 className="font-reminder text-white text-6xl md:text-7xl leading-tight">
+          Saving Relationships, <br />
+          One Vacation at a Time!
+        </h1>
+
+        <button className="mt-8 bg-[#FD014F] h-12 w-60 text-white px-8 py-3 rounded-full text-lg font-medium">
+          Book a Call
+        </button>
+      </div>
+
+    </div>
+<section className="w-full bg-[#F8F2EC] py-10 border-t border-blue-300">
+  <div className="max-w-5xl mx-auto flex items-center justify-center gap-20 px-4">
+
+  
+    <div className="flex items-center gap-3">
+      <img src="/image/Star Coin.svg" alt="Google" className="w-12" />
+
+      <div>
+        <p className="text-[18px] font-semibold text-gray-800">4.6/5</p>
+        <p className="text-sm text-gray-500">Google reviews</p>
+      </div>
+    </div>
+
+
+    <div className="w-px h-10 bg-gray-300 hidden md:block"></div>
+
+    <div className="flex items-center gap-3">
+      <img src="/image/run by.svg" alt="Award" className="w-12" />
+
+      <div>
+        <p className="text-[18px] font-semibold text-gray-800">Run by</p>
+        <p className="text-sm text-gray-500">IIT-IIM, Apple team</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="w-full bg-[#F8F2EC] py-16">
+  <div className="max-w-6xl mx-auto text-center px-4">
+
+   
+    <h2 className="font-reminder text-4xl md:text-5xl text-[#1E2452]">
+      Why were the perfect match
+    </h2>
+
+
+    <p className="text-[#6A6D7C] mt-4 max-w-2xl mx-auto font-medium">
+      Overwhelmed by itineraries that leave you no time to relax together?<br />
+      Suspect your friendly travel agent isn t so friendly to your wallet? Then give us a try!
+    </p>
+
+
+    <div className="mt-12 flex flex-wrap justify-center gap-6">
+
+
+      <div className="w-[340px] bg-white rounded-2xl shadow-sm p-6 flex gap-4 relative overflow-hidden border border-gray-100">
+        
+        <div className="absolute left-[50%] top-0 -translate-x-1/2 w-4 h-4 bg-[#FBF7F3] rounded-b-full"></div>
+        <div className="absolute left-[50%] bottom-0 -translate-x-1/2 w-4 h-4 bg-[#FBF7F3] rounded-t-full"></div>
+
+        <img src="/image/couple.png" className="w-12 h-12" />
+        <div className="flex flex-col">
+          <h3 className="font-semibold text-[#1E2452]">Made for Couples</h3>
+          <p className="text-sm text-[#666C99] mt-1 w-40">
+            Vacations curated solely with couples in mind
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+   
+      <div className="w-[340px] bg-white rounded-2xl shadow-sm p-6 flex gap-4 relative overflow-hidden border border-gray-100">
+        <div className="absolute left-[50%] top-0 -translate-x-1/2 w-4 h-4 bg-[#FBF7F3] rounded-b-full"></div>
+        <div className="absolute left-[50%] bottom-0 -translate-x-1/2 w-4 h-4 bg-[#FBF7F3] rounded-t-full"></div>
+
+        <img src="/image/cash.png" className="w-12 h-12" />
+        <div>
+          <h3 className="font-semibold text-[#1E2452]">Price Transparency</h3>
+          <p className="text-sm text-[#6A6D7C] mt-1">
+            Only travel company to provide a split of Flights, Hotels & Activities
+          </p>
         </div>
-      </main>
+      </div>
+
+    
+      <div className="w-[340px] bg-white rounded-2xl shadow-sm p-6 flex gap-4 relative overflow-hidden border border-gray-100">
+        <div className="absolute left-[50%] top-0 -translate-x-1/2 w-4 h-4 bg-[#FBF7F3] rounded-b-full"></div>
+        <div className="absolute left-[50%] bottom-0 -translate-x-1/2 w-4 h-4 bg-[#FBF7F3] rounded-t-full"></div>
+
+        <img src="/image/security.png" className="w-12 h-12" />
+        <div>
+          <h3 className="font-semibold text-[#1E2452]">No Tourist Traps</h3>
+          <p className="text-sm text-[#6A6D7C] mt-1">
+            Only 8+ rated hotels; hand-picked authentic activities
+          </p>
+        </div>
+      </div>
+
     </div>
+  </div>
+</section>
+
+{/* <DestinationsPage/> */}
+
+</>
+
+
   );
 }
