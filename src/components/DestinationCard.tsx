@@ -8,7 +8,7 @@ type Props = {
 
 export default function DestinationCard({ title, description, image }: Props) {
   return (
-    <div className="bg-white rounded-2xl shadow-md p-2 max-w-sm mx-auto">
+    <div className="bg-white rounded-2xl shadow-md p-2 max-w-sm mx-auto flex flex-col items-start gap-2">
       <div className="rounded-t-xl overflow-hidden">
         <Image
           src={image}
@@ -25,7 +25,7 @@ export default function DestinationCard({ title, description, image }: Props) {
 
       <p className="w-60 text-left text-[#6F6F6F] ">{description}</p>
 
-      <button className="mt-3 items-left text-[#FF146A] font-medium hover:underline">
+      <button className="mt-3 flex items-left text-[#FF146A] font-medium">
         View Itineraries
       </button>
     </div>
