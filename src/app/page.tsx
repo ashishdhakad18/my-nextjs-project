@@ -1,3 +1,5 @@
+
+import RealItineraries from "@/components/RealItineraries";
 import DestinationsPage from "./destinations/page";
 
 export default function Home() {
@@ -44,7 +46,7 @@ export default function Home() {
             <li>About</li>
           </ul>
 
- <button className=" bg-[#FD014F] h-12 w-60 text-white px-8 py-3 rounded-full text-lg font-medium">
+ <button className=" bg-[#FD014F] h-10 w-40 text-white px-6 py-1 rounded-full text-lg font-medium">
           Contact Us
         </button>
 
@@ -67,7 +69,7 @@ export default function Home() {
 <section className="w-full bg-[#F8F2EC] py-10 border-t border-blue-300">
   <div className="max-w-5xl mx-auto flex items-center justify-center gap-20 px-4">
 
-  
+    {/* Google Review */}
     <div className="flex items-center gap-3">
       <img src="/image/Star Coin.svg" alt="Google" className="w-12" />
 
@@ -77,9 +79,9 @@ export default function Home() {
       </div>
     </div>
 
+    {/* Removed vertical line */}
 
-    <div className="w-px h-10 bg-gray-300 hidden md:block"></div>
-
+    {/* Run By */}
     <div className="flex items-center gap-3">
       <img src="/image/run by.svg" alt="Award" className="w-12" />
 
@@ -88,8 +90,10 @@ export default function Home() {
         <p className="text-sm text-gray-500">IIT-IIM, Apple team</p>
       </div>
     </div>
+
   </div>
 </section>
+
 
 <section className="w-full bg-[#F8F2EC] py-16">
   <div className="max-w-6xl mx-auto text-center px-4">
@@ -156,6 +160,7 @@ export default function Home() {
 </section>
 
 <DestinationsPage/>
+<RealItineraries/>
 
 </>
 
