@@ -29,12 +29,12 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <img src="image/icon 2.svg" alt="logo" className="w-10" />
             <div className="flex flex-col gap-0 leading-tight">
-            <p className="text-small text-gray-700">30</p>
-            <span className="text-small text-gray-700" >Sundays</span>
+            <p className="text-small text-black">30</p>
+            <span className="text-small text-black" >Sundays</span>
             </div>
           </div>
 
-          <ul className="flex gap-10 text-gray-600 font-bold">
+          <ul className="flex gap-10 text-black font-medium font-semibold items-center">
             <li className="text-[#EF3A6D] relative">
               Home
               <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#EF3A6D]"></span>
@@ -43,6 +43,11 @@ export default function Home() {
             <li>Destinations</li>
             <li>About</li>
           </ul>
+
+ <button className=" bg-[#FD014F] h-12 w-60 text-white px-8 py-3 rounded-full text-lg font-medium">
+          Contact Us
+        </button>
+
         </nav>
       </header>
 
@@ -90,12 +95,12 @@ export default function Home() {
   <div className="max-w-6xl mx-auto text-center px-4">
 
    
-    <h2 className="font-reminder text-4xl md:text-5xl text-[#1E2452]">
+    <h2 className="font-reminder text-[60px] md:text-[67px] font-normal text-[#1E2452]">
       Why were the perfect match
     </h2>
 
 
-    <p className="text-[#6A6D7C] mt-4 max-w-2xl mx-auto font-medium">
+    <p className="text-[#6A6D7C] mt-4 max-w-3xl mx-auto font-medium text-lg">
       Overwhelmed by itineraries that leave you no time to relax together?<br />
       Suspect your friendly travel agent isn t so friendly to your wallet? Then give us a try!
     </p>
@@ -111,8 +116,8 @@ export default function Home() {
 
         <img src="/image/couple.png" className="w-12 h-12" />
         <div className="flex flex-col">
-          <h3 className="font-semibold text-[#1E2452]">Made for Couples</h3>
-          <p className="text-sm text-[#666C99] mt-1 w-40">
+          <h3 className="font-semibold flex text-left text-[#1E2452]">Made for Couples</h3>
+          <p className="text-sm text-[#666C99] flex text-left mt-1 w-40">
             Vacations curated solely with couples in mind
           </p>
         </div>
@@ -125,8 +130,8 @@ export default function Home() {
 
         <img src="/image/cash.png" className="w-12 h-12" />
         <div>
-          <h3 className="font-semibold text-[#1E2452]">Price Transparency</h3>
-          <p className="text-sm text-[#6A6D7C] mt-1">
+          <h3 className="font-semibold flex text-left text-[#1E2452]">Price Transparency</h3>
+          <p className="text-sm flex text-left text-[#6A6D7C] mt-1">
             Only travel company to provide a split of Flights, Hotels & Activities
           </p>
         </div>
@@ -138,9 +143,9 @@ export default function Home() {
         <div className="absolute left-[50%] bottom-0 -translate-x-1/2 w-4 h-4 bg-[#FBF7F3] rounded-t-full"></div>
 
         <img src="/image/security.png" className="w-12 h-12" />
-        <div>
-          <h3 className="font-semibold text-[#1E2452]">No Tourist Traps</h3>
-          <p className="text-sm text-[#6A6D7C] mt-1">
+        <div className="px-2">
+          <h3 className="font-semibold  flex text-left text-[#1E2452]">No Tourist Traps</h3>
+          <p className="text-sm flex text-left text-[#6A6D7C] mt-1">
             Only 8+ rated hotels; hand-picked authentic activities
           </p>
         </div>

@@ -22,8 +22,9 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins); /* GLOBAL POPPINS */
 }
+
 @font-face {
   font-family: "PF Reminder";
   src: url("/fonts/PF Reminder Pro Regular 2.ttf") format("truetype");
@@ -33,4 +34,8 @@ body {
 
 .font-reminder {
   font-family: "PF Reminder", sans-serif;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
 }

@@ -29,11 +29,11 @@ export default function DestinationsPage() {
       <div className="max-w-6xl mx-auto text-center px-4">
 
         {/* Heading */}
-        <h2 className="font-reminder text-5xl md:text-5xl text-[#1E2452]">
+        <h2 className="font-reminder text-[60px] md:text-[67px] font-normal text-[#1E2452]">
           30 Sundays curated destinations
         </h2>
         {/* Subtitle */}
-        <p className="text-[#6A6D7C] mt-2">
+        <p className="text-[#6A6D7C] mt-4 max-w-3xl mx-auto font-medium text-lg">
           Trade your couch for these hotspots—where couples trend instead of tweets!
         </p>
 
